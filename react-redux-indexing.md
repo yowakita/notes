@@ -59,8 +59,8 @@ const index = (
 ) => {
   switch (action.type) {
     case types.LIST_POSTS_SUCCESS:
-      return [...state, map(action.result.data, data => data.id)]
-          	
+      return [...state, map(action.result.data, data => data.id)];
+    default: return state;
 }
 ```
 

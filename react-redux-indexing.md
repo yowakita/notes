@@ -98,7 +98,7 @@ However, if you were to use the spread operator (as used in the example,) or `Ob
 
 By design, the given example only has one source of truth. This helps prevent the mismatch of data down the pipeline in your React code. 
 
-> But wait, how do I know which post is the current one when I got to a `post` detail page? 
+> But wait, how do I know which post is the current one when I go to a `post` detail page? 
 
 When we removed the `current` object, our React-Redux `connect`-ed component suddenly lost its prop that was synced with the Redux store. How do we solve this?
 

@@ -154,7 +154,7 @@ Note that we dispatch `loadProductionDetail` and `setCurrentPost`,
 ###Part 2: Faster and more efficient smart components
 This type of indexing is useful when the list of items can grow to the thousands. A very common problem in React-Redux applications is slow and laggy re-rendering of lists.
 
-This is because if you were to do a simple map of an array of items in a connected container, then anytime you were to modify the array, every single item would re-render. Take a look at the following code and note that the container (Posts.js) simply passes down `id`s to each `Box` component. The `Box` components are `connect`-ed, but listen only to the data that corresponds to the `id` passed to them as a prop.
+This is because if you were to do a simple map of an array of items in a connected container, then anytime you were to modify the array, every single item would re-render. Take a look at the following code and note that the container (Posts.js) simply passes down `id`s to each `Box` component. The `Box` components are `connect`-ed, but listen only to the data that corresponds to the `id` passed to them as a prop. This means that the individual `Box` will rerender only if there is a change to the specific `Post` data that it is listening to.
 
 
 ```

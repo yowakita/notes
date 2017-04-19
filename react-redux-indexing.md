@@ -1,6 +1,6 @@
-#Efficient Indexing in React-Redux Applications
+# Efficient Indexing in React-Redux Applications
 
-###Part 1: Cleaner Reducer Design
+### Part 1: Cleaner Reducer Design
 
 Very frequently in an application, we need to retrieve a list of data from an API. Here is a commonly used reducer pattern:
 
